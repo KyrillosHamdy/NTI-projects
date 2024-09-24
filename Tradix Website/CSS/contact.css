@@ -1,0 +1,96 @@
+*
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+
+i
+{
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+i:hover
+{
+    color: #0d6efd;
+    transition-duration: 0.2s;
+}
+
+.lines h3
+{
+    position: relative;
+}
+.lines h3::before
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    left: -90px;
+    top: 30px;
+}
+.lines h3 span::before
+{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    left: -65px;
+    top: 20px;
+}
+.lines h3::after
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -90px;
+    top: 30px;
+}
+.lines h3 span::after
+{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -65px;
+    top: 20px;
+}
+
+#contact
+{
+    background-image: url(../Images/slider1.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    
+}
+#contact .overlay
+{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+#contact .d1
+{
+    margin: 120px 0;
+}
+#contact .darker
+{
+    background-color: rgba(0, 0, 0, 0.478);
+}
+
+#touch textarea
+{
+    text-align: start;
+    padding: 100px 1000px 100px 10px;
+}
+

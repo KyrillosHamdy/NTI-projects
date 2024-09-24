@@ -1,0 +1,298 @@
+*
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+
+i
+{
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+i:hover
+{
+    color: #0d6efd;
+    transition-duration: 0.2s;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 2%;
+    bottom: 40%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+}
+
+h1
+{
+    font-size: 60px;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+}
+
+li
+{
+    list-style: none;
+}
+.services
+{
+    background-image: url(../Images/service-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 100% 130%;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.923);
+}
+/* #about */
+#about .content .bar
+{
+    
+}
+@media screen and (min-width: 767px){
+    #about .content .bar
+    {
+        position: absolute;
+        top: 20px;
+        left: -250px;
+    }
+}
+@media screen and (max-width: 766px){
+    #about .content .bar
+    {
+        position: static;
+       
+    }
+}
+.services .parent
+{
+    position: relative;
+    overflow: hidden;
+}
+.services .child
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.services .parent:hover .child
+{
+    top: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+
+#work .parent
+{
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#work .parent .child
+{
+    position: absolute;
+    left: 4%;
+    top: 80%;
+    background-color: rgba(66, 95, 239, 0.879);
+    color: rgb(240, 245, 255);
+    transform: scaleX(0);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#work .parent:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.542)  0px 0px 10px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+#work .parent:hover .child
+{
+    transform: scaleX(1);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#team .parent
+{
+    overflow: hidden;
+}
+
+#team .child
+{
+    top: 80%;
+    left: 5%;  
+    background-color:rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#team .parent:hover
+{
+    border: 0;
+}
+#team .parent:hover .child
+{
+    top: 50%;
+    border: none;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#team .child .bar
+{
+    top: 100%;
+}
+#team .parent:hover .bar
+{
+    top: 85%;
+    transition-duration: 0.5s;
+}
+
+#pricing .spacial
+{
+    height: 2px;
+}
+
+#cards .ma
+{
+    margin: 100px 50px;
+}
+.lines h3
+{
+    position: relative;
+}
+.lines h3::before
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    left: -90px;
+    top: 30px;
+}
+.lines h3 span::before
+{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    left: -65px;
+    top: 20px;
+}
+.lines h3::after
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -90px;
+    top: 30px;
+}
+.lines h3 span::after
+{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -65px;
+    top: 20px;
+}
+#blog .card aside
+{
+    background-color: black;
+    transition-duration: 0.3s;
+}
+#blog .card:hover aside
+{
+    background-color: #0d6efd;
+    transition-duration: 0.3s;
+}
+#blog hr::after
+{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+}
+#blog hr::after:hover
+{
+    width: 100px;
+}
+#blog .hidden
+{
+    overflow: hidden;
+}
+#blog .hidden img
+{
+    transition-duration: 0.3s;
+}
+#blog .hidden img:hover
+{
+    transform: rotate(-5deg) scale(1.2);
+}
+
+
+#clients .lines2 h3
+{
+    position: relative;
+}
+#clients .lines2 h3::after
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -90px;
+    top: 30px;
+}
+#clients .lines2 h3 span::after
+{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #0d6efd;
+    position: absolute;
+    right: -65px;
+    top: 20px;
+}
+
+footer .last 
+{
+    box-shadow: rgba(0, 0, 0, 0.784)  10px 10px 50px 10px;
+}
